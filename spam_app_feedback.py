@@ -63,8 +63,8 @@ if len(st.session_state.predictions) >= 5:
 
 # Bar chart for feedback
 if st.session_state.feedback:
-    correct_count = st.session_state.feedback.count("Enjoyed 😄 (Correct/Ham)")
-    incorrect_count = st.session_state.feedback.count("Not Enjoyed 😅 (Incorrect/Spam)")
+    correct_count = st.session_state.feedback.count("Enjoyed 😄 (Correct)")
+    incorrect_count = st.session_state.feedback.count("Not Enjoyed 😅 (Incorrect)")
 
     st.subheader("Prediction Feedback Summary")
     fig, ax = plt.subplots()
