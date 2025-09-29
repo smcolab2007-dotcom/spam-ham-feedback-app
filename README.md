@@ -1,4 +1,4 @@
-![App Screenshot](cover_app.png)
+![App Screenshot](cover-app.png)
 
 **Email Spam Detection with Feedback and Chart**
 
