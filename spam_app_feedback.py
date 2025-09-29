@@ -68,7 +68,7 @@ if st.session_state.feedback:
 
     st.subheader("Prediction Feedback Summary")
     fig, ax = plt.subplots()
-    ax.bar(["Correct (Ham)", "Incorrect (Spam)"], [correct_count, incorrect_count], color=["green", "red"])
+    ax.bar(["Correct", "Incorrect"], [correct_count, incorrect_count], color=["green", "red"])
     for i, v in enumerate([correct_count, incorrect_count]):
         ax.text(i, v + 0.1, str(v), ha='center', fontweight='bold')
     st.pyplot(fig)
