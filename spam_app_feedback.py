@@ -50,7 +50,7 @@ if len(st.session_state.predictions) < 5:
 if len(st.session_state.predictions) > len(st.session_state.feedback) and len(st.session_state.predictions) <= 5:
     feedback_option = st.radio(
         "Was the prediction correct?",
-        ("Enjoyed 😄 (Correct/Ham)", "Not Enjoyed 😅 (Incorrect/Spam)"),
+        ("Enjoyed 😄 (Correct)", "Not Enjoyed 😅 (Incorrect)"),
         key=len(st.session_state.feedback)
     )
     if st.button("Submit Feedback", key="fb" + str(len(st.session_state.feedback))):
