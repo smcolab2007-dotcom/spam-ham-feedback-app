@@ -36,3 +36,4 @@ Model: TF-IDF vectorizer + Multinomial Naive Bayes
 ## Notes
 - This is for educational purposes, for experiencing how to deploy app on social media platform.
 - Usage limit: Up to 5 messages per session
+- App link : https://spam-ham-feedback-app-gp6zksqneb3qyyipqujwrs.streamlit.app/
