@@ -23,7 +23,7 @@ labels = [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]  # 1 = Spam, 0 = Ham
 
 # Train model
 model = Pipeline([
-    ('tfidf', TfidfVectorizer(stop_words='english')),
+    ('tfidf', TfidfVectorizer(stop_words=None, analyzer='char', ngram_range=(3,5))),
     ('clf', MultinomialNB())
 ])
 model.fit(emails, labels)
