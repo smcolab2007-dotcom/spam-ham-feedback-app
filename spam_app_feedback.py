@@ -29,7 +29,8 @@ model = Pipeline([
 model.fit(emails, labels)
 
 st.title("Email Spam Detection with Feedback and Chart")
-input_text = st.text_area("Enter email text:")
+input_text = st.text_area("Enter email text:",
+                          placeholder="Hint: Emails/messages containing words like 'free', 'win', 'gift', 'cash', 'offer' are often spam.")
 st.info("You can enter up to 5 messages in this session.")
 
 # Initialize session state
