@@ -40,7 +40,7 @@ if "feedback" not in st.session_state:
 
 # Input and prediction
 if len(st.session_state.predictions) < 5:
-    input_text = st.text_area("Enter email text:")
+    #input_text = st.text_area("Enter email text:")
 
     if st.button("Predict"):
         prediction = model.predict([input_text])[0]
